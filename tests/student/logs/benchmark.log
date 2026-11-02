@@ -1,0 +1,34 @@
+Java 21.0.12.1, Linux amd64, 4 CPUs, seed 2026
+Microseconds per call; each run lasts about 20 ms; 500 warm-up rounds over all cases.
+
+|Case|n|m|Algorithm|Calls/run|Run 1|Run 2|Run 3|Run 4|Run 5|Median|Matches|RK candidates|Outputs identical|
+|---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
+|random acgt, pattern cut from text|750|75|naive|3016|4.5|4.3|4.3|4.3|4.5|**4.3**|1|7|yes|
+|random acgt, pattern cut from text|750|75|kmp|3194|2.9|2.8|2.7|2.9|2.7|**2.8**|1|7|yes|
+|random acgt, pattern cut from text|750|75|rk|2350|7.5|7.4|7.5|7.4|7.3|**7.4**|1|7|yes|
+|random acgt, pattern cut from text|1500|150|naive|2370|8.7|9.1|8.8|8.4|8.3|**8.7**|1|13|yes|
+|random acgt, pattern cut from text|1500|150|kmp|2879|5.4|5.6|5.4|5.1|5.2|**5.4**|1|13|yes|
+|random acgt, pattern cut from text|1500|150|rk|1412|14.8|14.9|14.6|14.3|14.3|**14.6**|1|13|yes|
+|random acgt, pattern cut from text|3000|300|naive|1111|16.3|17.0|21.1|16.4|17.5|**17.0**|1|34|yes|
+|random acgt, pattern cut from text|3000|300|kmp|1728|10.8|10.7|15.2|10.4|20.2|**10.8**|1|34|yes|
+|random acgt, pattern cut from text|3000|300|rk|685|29.7|28.7|30.9|28.3|35.3|**29.7**|1|34|yes|
+|repetitive hit a^n / a^m|750|75|naive|264|43.6|43.8|43.7|46.7|45.7|**43.8**|676|676|yes|
+|repetitive hit a^n / a^m|750|75|kmp|2766|8.8|7.2|8.1|7.4|9.8|**8.1**|676|676|yes|
+|repetitive hit a^n / a^m|750|75|rk|481|42.7|41.6|56.6|41.3|78.2|**42.7**|676|676|yes|
+|repetitive hit a^n / a^m|1500|150|naive|67|268.7|172.3|166.9|162.9|162.5|**166.9**|1351|1351|yes|
+|repetitive hit a^n / a^m|1500|150|kmp|861|15.8|15.9|19.3|15.1|15.4|**15.8**|1351|1351|yes|
+|repetitive hit a^n / a^m|1500|150|rk|69|151.3|149.7|146.3|145.9|145.3|**146.3**|1351|1351|yes|
+|repetitive hit a^n / a^m|3000|300|naive|34|600.4|600.3|652.2|637.1|1291.8|**637.1**|2701|2701|yes|
+|repetitive hit a^n / a^m|3000|300|kmp|609|32.6|29.4|42.8|45.2|57.7|**42.8**|2701|2701|yes|
+|repetitive hit a^n / a^m|3000|300|rk|37|604.3|598.1|655.0|851.7|723.2|**655.0**|2701|2701|yes|
+|repetitive miss a^n / a^(m-1)b|750|75|naive|503|40.7|46.1|46.5|45.1|40.3|**45.1**|0|0|yes|
+|repetitive miss a^n / a^(m-1)b|750|75|kmp|4098|4.9|6.0|5.1|8.0|4.4|**5.1**|0|0|yes|
+|repetitive miss a^n / a^(m-1)b|750|75|rk|2773|7.2|7.7|8.0|6.9|6.9|**7.2**|0|0|yes|
+|repetitive miss a^n / a^(m-1)b|1500|150|naive|138|149.3|145.5|145.4|148.6|149.2|**148.6**|0|0|yes|
+|repetitive miss a^n / a^(m-1)b|1500|150|kmp|2363|8.9|9.3|8.7|15.0|9.0|**9.0**|0|0|yes|
+|repetitive miss a^n / a^(m-1)b|1500|150|rk|1329|14.0|13.8|13.5|15.0|15.3|**14.0**|0|0|yes|
+|repetitive miss a^n / a^(m-1)b|3000|300|naive|20|751.8|568.8|611.2|1026.6|587.7|**611.2**|0|0|yes|
+|repetitive miss a^n / a^(m-1)b|3000|300|kmp|594|17.8|17.9|36.5|22.1|20.5|**20.5**|0|0|yes|
+|repetitive miss a^n / a^(m-1)b|3000|300|rk|612|28.1|27.7|31.9|27.7|27.8|**27.8**|0|0|yes|
+
+checksum 35259400

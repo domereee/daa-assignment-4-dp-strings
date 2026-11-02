@@ -1,0 +1,54 @@
+{"task":"lcs","a":"","b":""}
+{"task":"lcs","a":"abc","b":""}
+{"task":"lcs","a":"abc","b":"xyz"}
+{"task":"lcs","a":"aaab","b":"abab"}
+{"task":"lcs","a":"AGGTAB","b":"GXTXAYB"}
+{"task":"lcs","a":"A b,C","b":"a b,c"}
+{"task":"lcs","a":"ABCA","b":"BAC"}
+{"task":"merge","sizes":[5,7]}
+{"task":"merge","sizes":[1,100,1]}
+{"task":"merge","sizes":[1,1,1,1]}
+{"task":"merge","sizes":[3,1,2]}
+{"task":"merge","sizes":[1000000000,1000000000,1000000000,1000000000]}
+{"task":"tree","n":1,"weights":[7],"edges":[]}
+{"task":"tree","n":5,"weights":[10,3,3,3,3],"edges":[[0,1],[0,2],[0,3],[0,4]]}
+{"task":"tree","n":4,"weights":[4,4,9,4],"edges":[[2,0],[2,1],[2,3]]}
+{"task":"tree","n":5,"weights":[3,-1,4,-1,5],"edges":[[0,1],[1,2],[2,3],[3,4]]}
+{"task":"tree","n":3,"weights":[5,-2,4],"edges":[[0,1],[0,2]]}
+{"task":"tree","n":3,"weights":[1000000000,-1000000000,1000000000],"edges":[[0,1],[1,2]]}
+{"task":"naive","text":"","pattern":"a"}
+{"task":"naive","text":"abc","pattern":"abc"}
+{"task":"naive","text":"a.b a.b","pattern":"a.b"}
+{"task":"naive","text":"aAaA","pattern":"aA"}
+{"task":"naive","text":"abababab","pattern":"abab"}
+{"task":"naive","text":"aaab","pattern":"aab"}
+{"task":"naive","text":"abacabab","pattern":"abab"}
+{"task":"kmp","text":"","pattern":"a"}
+{"task":"kmp","text":"abc","pattern":"abc"}
+{"task":"kmp","text":"a.b a.b","pattern":"a.b"}
+{"task":"kmp","text":"aAaA","pattern":"aA"}
+{"task":"kmp","text":"abababab","pattern":"abab"}
+{"task":"kmp","text":"aaab","pattern":"aab"}
+{"task":"kmp","text":"abacabab","pattern":"abab"}
+{"task":"rk","text":"","pattern":"a"}
+{"task":"rk","text":"abc","pattern":"abc"}
+{"task":"rk","text":"a.b a.b","pattern":"a.b"}
+{"task":"rk","text":"aAaA","pattern":"aA"}
+{"task":"rk","text":"abababab","pattern":"abab"}
+{"task":"rk","text":"aaab","pattern":"aab"}
+{"task":"rk","text":"abacabab","pattern":"abab"}
+{"task":"rk","text":"djab","pattern":"ab"}
+{"task":"rk","text":"abdjab","pattern":"dj"}
+{"task":"rk","text":"zab","pattern":"ab"}
+{"task":"suffix","text":"abc"}
+{"task":"suffix","text":"mississippi"}
+{"task":"suffix","text":"aabb"}
+{"task":"suffix","text":"a$a"}
+{"task":"suffix","text":"b a"}
+{"task":"aho","patterns":["he","she","his","hers"],"texts":["ushers"]}
+{"task":"aho","patterns":["aa"],"texts":["aaaa"]}
+{"task":"aho","patterns":["x","y"],"texts":[""]}
+{"task":"aho","patterns":["a","ab","bab","b","a"],"texts":["abab","xyz",""]}
+{"task":"aho","patterns":["abc"],"texts":["ab"]}
+{"task":"aho","patterns":[" ","a b"],"texts":["a b a b"]}
+{"task":"aho","patterns":["ab","b"],"texts":["abb","abb"]}

@@ -1,0 +1,74 @@
+PASS  fixture expectations agree with oracle         54/54   
+PASS  fixtures, mixed batch repeated twice          108/108    0.10 s
+  lcs-both-empty: {"length":0,"sequence":""}
+  lcs-second-empty: {"length":0,"sequence":""}
+  lcs-no-common: {"length":0,"sequence":""}
+  lcs-repeated-chars: {"length":3,"sequence":"aab"}
+  lcs-classic: {"length":4,"sequence":"GTAB"}
+  lcs-case-punctuation: {"length":3,"sequence":" b,"}
+  lcs-practice: {"length":2,"sequence":"AC"}
+  merge-two: {"cost":12,"plan":[[0,0,1]]}
+  merge-adjacency: {"cost":203,"plan":[[1,1,2],[0,0,2]]}
+  merge-balanced: {"cost":8,"plan":[[0,0,1],[2,2,3],[0,1,3]]}
+  merge-chronological: {"cost":9,"plan":[[1,1,2],[0,0,2]]}
+  merge-64bit: {"cost":8000000000,"plan":[[0,0,1],[2,2,3],[0,1,3]]}
+  tree-single: {"weight":7,"selected":[0]}
+  tree-star: {"weight":12,"selected":[1,2,3,4]}
+  tree-root-choice: {"weight":12,"selected":[0,1,3]}
+  tree-mixed-signs: {"weight":12,"selected":[0,2,4]}
+  tree-negative-child: {"weight":5,"selected":[0]}
+  tree-large-sum: {"weight":2000000000,"selected":[0,2]}
+  naive-empty-text: {"positions":[]}
+  naive-whole-text: {"positions":[0]}
+  naive-punctuation: {"positions":[0,4]}
+  naive-case: {"positions":[0,2]}
+  naive-periodic: {"positions":[0,2,4]}
+  naive-fallback: {"positions":[1]}
+  naive-late-match: {"positions":[4]}
+  kmp-empty-text: {"positions":[]}
+  kmp-whole-text: {"positions":[0]}
+  kmp-punctuation: {"positions":[0,4]}
+  kmp-case: {"positions":[0,2]}
+  kmp-periodic: {"positions":[0,2,4]}
+  kmp-fallback: {"positions":[1]}
+  kmp-late-match: {"positions":[4]}
+  rk-empty-text: {"positions":[]}
+  rk-whole-text: {"positions":[0]}
+  rk-punctuation: {"positions":[0,4]}
+  rk-case: {"positions":[0,2]}
+  rk-periodic: {"positions":[0,2,4]}
+  rk-fallback: {"positions":[1]}
+  rk-late-match: {"positions":[4]}
+  rk-collision-dj: {"positions":[2]}
+  rk-collision-pattern-dj: {"positions":[2]}
+  rk-negative-remainder: {"positions":[1]}
+  suffix-distinct: {"sa":[0,1,2],"lcp":[0,0,0],"repeated":""}
+  suffix-mississippi: {"sa":[10,7,4,1,0,9,8,6,3,5,2],"lcp":[0,1,1,4,0,0,1,0,2,1,3],"repeated":"issi"}
+  suffix-tied-repeats: {"sa":[0,1,3,2],"lcp":[0,1,0,1],"repeated":"a"}
+  suffix-dollar-is-text: {"sa":[1,2,0],"lcp":[0,0,1],"repeated":"a"}
+  suffix-space: {"sa":[1,2,0],"lcp":[0,0,0],"repeated":""}
+  aho-ushers: {"counts":[[1,1,0,1]]}
+  aho-overlap: {"counts":[[3]]}
+  aho-empty-text: {"counts":[[0,0]]}
+  aho-failure-chain: {"counts":[[2,2,1,2,2],[0,0,0,0,0],[0,0,0,0,0]]}
+  aho-longer-pattern: {"counts":[[0]]}
+  aho-spaces: {"counts":[[3,2]]}
+  aho-repeated-texts: {"counts":[[1,2],[1,2]]}
+PASS  random lcs vs brute force                     400/400    0.12 s
+PASS  random merge vs brute force                   400/400    0.12 s
+PASS  random tree vs brute force                    400/400    0.16 s
+PASS  random suffix vs brute force                  400/400    0.13 s
+PASS  random aho vs brute force                     400/400    0.12 s
+PASS  random naive vs brute force                   400/400    0.11 s
+PASS  random kmp vs brute force                     400/400    0.10 s
+PASS  random rk vs brute force                      400/400    0.14 s
+PASS  naive, kmp and rk give identical outputs      400/400  
+PASS  scale lcs (one batch)                           4/4      0.13 s
+PASS  scale merge (one batch)                         3/3      0.11 s
+PASS  scale tree (one batch)                          5/5      0.93 s
+PASS  scale naive (one batch)                         3/3      0.11 s
+PASS  scale kmp (one batch)                           6/6      0.34 s
+PASS  scale rk (one batch)                            4/4      0.13 s
+PASS  scale suffix (one batch)                        5/5      0.41 s
+PASS  scale aho (one batch)                           4/4      0.64 s
+ALL STUDENT TESTS PASSED
